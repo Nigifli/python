@@ -2,7 +2,7 @@ from os import system
 
 name: str=None
 
-print("Kérem adja meg a nevet: ")
+print("Kérem adja meg a nevet: ", end="")
 name=str(input())
 
 system('cls')
