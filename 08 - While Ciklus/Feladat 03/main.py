@@ -1,20 +1,25 @@
-import random
+from random import randint
 
-random: int=None
-guess: int=None
-tries: int=0
+number: int = None
+solution: int = None
+temp: str= None
+tries = 0
 
-random = random.randrange(1, 9)
-
-print("Tippeljen egy számra 0 és 9 között! ", end="")
-guess = int(input())
+solution = randint(1, 9)
 
 while(tries < 5):
-    if (guess == random):
+    print("Tippeljen: ")
+    temp = input()
+    if (temp.isnumeric()):
+        number = int(temp)
+    else:
+        continue
+
+    if (number == solution):
         print("Talált!")
+        break
     else:
         tries = tries + 1
-        print("Tippeljen egy számra 0 és 9 között! ", end="")
-        guess = int(input())
         
-print(random)
+if (tries==5):
+    print("Nem nyert!")
