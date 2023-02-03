@@ -17,9 +17,8 @@ while(tries < 5):
 
     if (number == solution):
         print("Talált!")
-        break
-    else:
-        tries = tries + 1
+    else:  
+        print("Nem nyert!")
+  
         
-if (tries==5):
-    print("Nem nyert!")
+

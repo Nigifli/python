@@ -3,6 +3,12 @@ kisebbSzam: int = None
 kisebbIdeiglenes: str = None
 nagyobbIdeiglenes: str = None
 
+while(kisebbSzam == None):
+    print("Kérem írja be a kisebbik számot: ")
+    kisebbIdeiglenes = input()
+    if(kisebbIdeiglenes.isnumeric()):
+        kisebbSzam == int(kisebbIdeiglenes)
+
 while ((kisebbSzam == None or nagyobbSzam == None) or nagyobbSzam <= kisebbSzam):
     print("Kérem írja be a kisebbik számot: ")
     kisebbIdeiglenes=input()
