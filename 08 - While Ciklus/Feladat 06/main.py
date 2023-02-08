@@ -1,4 +1,5 @@
 age: int = None
+temp: str = None
 
 while age == None or not (age >= 0 and age <= 99):
     print("Adja meg az életkorát: ")
