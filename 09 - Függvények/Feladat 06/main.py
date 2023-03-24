@@ -1,8 +1,8 @@
 from consoleIO import *
 from functions import *
 
-temperature: float = None
-unit: str = None
+temperature: float = makeCelsius()
+unit: str = makeUnit()
+convertedTemp: float = calculateUnit(temperature, unit)
 
-temperature = makeCelsius()
-unit = makeUnit()
+print(f"Az átváltott hőmérséklet {convertedTemp} {unit}.")
